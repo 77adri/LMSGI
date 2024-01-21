@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE intercanvi_dades SYSTEM "act4dtd.dtd">
+<intercanvi_dades>
+    <venda>
+        <titolsVenuts>
+            <titol>
+                <nom>TitolA</nom>
+                <quantitat>50</quantitat>
+            </titol>
+            <titol>
+                <nom>TitolB</nom>
+                <quantitat>30</quantitat>
+            </titol>
+        </titolsVenuts>
+        <quantitatTotal>80</quantitatTotal>
+        <lliurat>true</lliurat>
+        <import moneda="EUR">1200.00</import>
+    </venda>
+    <compra>
+        <titolsComprats>
+            <titol>
+                <nom>TitolC</nom>
+                <quantitat>20</quantitat>
+            </titol>
+        </titolsComprats>
+        <proveidor>ProveidorX</proveidor>
+        <dataCompra>
+            <dia>15</dia>
+            <mes>02</mes>
+            <any>2024</any>
+        </dataCompra>
+    </compra>
+</intercanvi_dades>

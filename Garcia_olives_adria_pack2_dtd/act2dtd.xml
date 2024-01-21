@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llibres [
+    <!ELEMENT llibres (operacio+)>
+    <!ELEMENT operacio (venta | compra)+>
+    <!ELEMENT venta (titol+, disponible?, quantitat, import)>
+    <!ELEMENT compra (titol+, fetxa_compra, proveidor)>
+    
+    <!ELEMENT titol (#PCDATA)>
+    <!ELEMENT disponible (#PCDATA)>
+    <!ELEMENT quantitat (#PCDATA)>
+    <!ELEMENT import (#PCDATA)>
+    <!ATTLIST import moneda CDATA #REQUIRED>
+
+    <!ELEMENT fetxa_compra (any, mes, dia)>
+    <!ELEMENT any (#PCDATA)>
+    <!ELEMENT mes (#PCDATA)>
+    <!ELEMENT dia (#PCDATA)>
+    <!ELEMENT proveidor (#PCDATA)>
+]>
+
+<llibres>
+    <operacio>
+        <venta>
+            <titol>Don Quijote de la Mancha</titol>
+            <disponible>si</disponible>
+            <quantitat>10</quantitat>
+            <import moneda="EUR">100</import>
+        </venta>
+    </operacio>
+    <operacio>
+        <compra>
+            <titol>El principito</titol>
+            <fetxa_compra>
+                <any>2022</any>
+                <mes>04</mes>
+                <dia>01</dia>
+            </fetxa_compra>
+            <proveidor>Enrique Suarez</proveidor>
+        </compra>
+        <compra>
+            <titol>Geronimo Stilton</titol>
+            <fetxa_compra>
+                <any>2012</any>
+                <mes>12</mes>
+                <dia>23</dia>
+            </fetxa_compra>
+            <proveidor>Enrique Suarez</proveidor>
+        </compra>
+    </operacio>
+</llibres>

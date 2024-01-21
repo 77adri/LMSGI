@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE entrega SYSTEM "act3dtd.dtd">
+<entrega>
+    <lot>
+        <palet>
+            <nombreCaixes>20</nombreCaixes>
+            <contingut>
+                <component>
+                    <nom>NouComponent</nom>
+                    <procedencia>
+                        <pais>Espanya</pais>
+                        <pais>França</pais>
+                    </procedencia>
+                    <numeroSerie>ABC123</numeroSerie>
+                    <pes>2.5</pes>
+                    <unitatPes>quilos</unitatPes>
+                </component>
+                <component>
+                    <nom>AltComponent</nom>
+                    <numeroSerie>XYZ789</numeroSerie>
+                    <pes>1.8</pes>
+                </component>
+            </contingut>
+            <pesPalet>50.0</pesPalet>
+            <formaManipulacio>Pallet</formaManipulacio>
+        </palet>
+    </lot>
+</entrega>

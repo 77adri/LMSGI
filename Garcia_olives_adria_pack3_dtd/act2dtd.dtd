@@ -1,0 +1,5 @@
+<!ELEMENT llistacomandes (comanda*)>
+<!ELEMENT comanda (numeroSerie, quantitat, pes?)>
+<!ELEMENT numeroSerie (#PCDATA)>
+<!ELEMENT quantitat (#PCDATA)>
+<!ELEMENT pes (#PCDATA)>

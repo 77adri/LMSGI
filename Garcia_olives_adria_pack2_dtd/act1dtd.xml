@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE viatge [
+    <!ELEMENT client (nom, llinatges)>
+    <!ELEMENT nom (#PCDATA)>
+    <!ELEMENT llinatges (#PCDATA)>
+
+    <!ELEMENT fecha_inici (#PCDATA)>
+    <!ELEMENT fecha_fi (#PCDATA)>
+    <!ELEMENT origen (#PCDATA)>
+
+    <!ELEMENT desti (desti+)>
+    <!ELEMENT desti (ciutat, hotel, nits)>
+    <!ELEMENT ciutat (#PCDATA)>
+    <!ELEMENT hotel (#PCDATA)>
+    <!ELEMENT nits (#PCDATA)>
+
+    <!ELEMENT preu_viatge (#PCDATA)>
+]>
+<viatge>
+    <client>
+        <nom>Pepe</nom>
+        <llinatges>Mir</llinatges>
+    </client>
+        <fecha_inici>14/08/2037</fecha_inici>
+        <fecha_fi>20/08/2037</fecha_fi>
+        <origen>Mozambique</origen>
+    <desti>
+        <ciutat>Rio de Janeiro</ciutat>
+        <hotel>Hotel Ney</hotel>
+        <nits>6</nits>
+    </desti>
+        <preu_viatge>1200€</preu_viatge>
+</viatge>
+<viatge>
+    <client>
+        <nom>Joan</nom>
+        <llinatges>Mokos Moll</llinatges>
+    </client>
+        <fecha_inici>12/01/2025</fecha_inici>
+        <fecha_fi>20/01/2025</fecha_fi>
+        <origen>Gabon</origen>
+    <desti>
+        <ciutat>San Juan</ciutat>
+        <hotel>Hotel Xamba</hotel>
+        <nits>8</nits>
+    </desti>
+        <preu_viatge>200€</preu_viatge>
+</viatge>
+<viatge>
+    <client>
+        <nom>Carlitos</nom>
+        <llinatges>Sandocan</llinatges>
+    </client>
+        <fecha_inici>12/01/2025</fecha_inici>
+        <fecha_fi>20/01/2025</fecha_fi>
+        <origen>Bora Bora</origen>
+    <desti>
+        <ciutat>Amsterdam</ciutat>
+        <hotel>Hotel Johan</hotel>
+        <nits>8</nits>
+    </desti>
+        <preu_viatge>1000€</preu_viatge>
+</viatge>

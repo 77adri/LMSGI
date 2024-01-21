@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistavendes SYSTEM "act1dtd.dtd">
+<llistavendes>
+    <venda>
+        <import>1200.50</import>
+        <comprador>ClientA</comprador>
+        <venedor>VenedorX</venedor>
+        <data>2023-02-15</data>
+        <codiFactura>FAC123</codiFactura>
+    </venda>
+    <venda>
+        <import>800.00</import>
+        <comprador>ClientB</comprador>
+        <venedor>VenedorY</venedor>
+        <codiFactura>FAC456</codiFactura>
+    </venda>
+</llistavendes>

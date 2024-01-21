@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistacomandes SYSTEM "act2dtd.dtd">
+<llistacomandes>
+    <comanda>
+        <numeroSerie>CMD001</numeroSerie>
+        <quantitat>10</quantitat>
+        <pes>25.5</pes>
+    </comanda>
+    <comanda>
+        <numeroSerie>CMD002</numeroSerie>
+        <quantitat>5</quantitat>
+    </comanda>
+    <comanda>
+        <numeroSerie>CMD003</numeroSerie>
+        <quantitat>8</quantitat>
+        <pes>15.0</pes>
+    </comanda>
+</llistacomandes>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE comanda SYSTEM "act3dtd.dtd">
+<comanda>
+    <tractor>
+        <component>
+            <nomFabricant>FabricantA</nomFabricant>
+            <dataEntrega any="2023" mes="01" dia="15"/>
+            <esFragil>true</esFragil>
+            <pesComponent unitat="quilos">1500</pesComponent>
+            <nombreSerie>ABC123</nombreSerie>
+            <kmMaxims>5000</kmMaxims>
+        </component>
+        <component>
+            <nomFabricant>FabricantB</nomFabricant>
+            <dataEntrega any="2022" mes="08" dia="10"/>
+            <esFragil>false</esFragil>
+            <pesComponent unitat="grams">800</pesComponent>
+            <nombreSerie>XYZ789</nombreSerie>
+        </component>
+    </tractor>
+    <tractor>
+        <component>
+            <nomFabricant>FabricantC</nomFabricant>
+            <dataEntrega any="2023" mes="05" dia="16"/>
+            <esFragil>false</esFragil>
+            <pesComponent unitat="quilos">1000</pesComponent>
+            <nombreSerie>WSF345</nombreSerie>
+            <kmMaxims>6000</kmMaxims>
+        </component>
+    </tractor>
+</comanda>

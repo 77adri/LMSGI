@@ -1,0 +1,14 @@
+<!ELEMENT entrega (lot+)>
+<!ELEMENT lot (palet+)>
+<!ELEMENT palet (nombreCaixes, contingut, pesPalet, formaManipulacio)>
+<!ELEMENT contingut (component+)>
+<!ELEMENT component (nom, procedencia?, numeroSerie, pes, unitatPes?)>
+<!ELEMENT procedencia (pais+)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT numeroSerie (#PCDATA)>
+<!ELEMENT pes (#PCDATA)>
+<!ELEMENT unitatPes (#PCDATA)>
+<!ELEMENT formaManipulacio (#PCDATA)>
+<!ELEMENT nombreCaixes (#PCDATA)>
+<!ELEMENT pesPalet (#PCDATA)>
