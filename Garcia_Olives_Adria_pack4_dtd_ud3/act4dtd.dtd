@@ -1,0 +1,27 @@
+<!ELEMENT mercats_accions (productes)>
+<!ELEMENT productes (futur|divisa|bo|lletra)*>
+
+<!ELEMENT futur (element_mercat?)>
+<!ATTLIST futur producte CDATA #REQUIRED
+               preu CDATA #REQUIRED
+               origen (Madrid|New York|Frankfurt|Tokio) #REQUIRED>
+
+<!ELEMENT divisa (tipus_canvi*)>
+<!ATTLIST divisa nom CDATA #REQUIRED
+                preu CDATA #REQUIRED
+                origen (Madrid|New York|Frankfurt|Tokio) #REQUIRED
+                estable (true|false) #IMPLIED>
+
+<!ELEMENT tipus_canvi EMPTY>
+<!ATTLIST tipus_canvi moneda CDATA #REQUIRED
+                     valor CDATA #REQUIRED>
+
+<!ELEMENT bo (valor_desitjat, valor_mínim, valor_màxim)>
+<!ATTLIST bo pais_de_procedencia CDATA #REQUIRED
+             preu CDATA #REQUIRED>
+
+<!ELEMENT lletra EMPTY>
+<!ATTLIST lletra tipus_interes CDATA #REQUIRED
+                pais_emissor (Espanya|els EUA|Alemanya|elJapo) #REQUIRED
+                preu CDATA #REQUIRED
+                origen (Madrid|New York|Frankfurt|Tokio) #REQUIRED>

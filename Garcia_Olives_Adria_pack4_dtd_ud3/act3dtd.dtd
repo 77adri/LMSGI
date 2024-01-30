@@ -1,0 +1,10 @@
+<!ELEMENT llibreria (llibre | quadern | llapis)+>
+
+<!ELEMENT llibre (#PCDATA)>
+<!ELEMENT llibre titol CDATA #REQUIRED>
+
+<!ELEMENT quadern (#PCDATA)>
+<!ELEMENT quadern num_pagines CDATA #IMPLIED>
+
+<!ELEMENT llapis (#PCDATA | numero)>
+<!ELEMENT numero  (#PCDATA)>

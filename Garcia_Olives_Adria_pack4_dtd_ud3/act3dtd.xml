@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE llibreria SYSTEM "act3dtd.dtd">
+<llibreria>
+    <llibre titol="El quijote"/>
+    <quadern num_fulles="450"/>
+    <llapis>
+        <numero>4</numero>
+    </llapis>
+    <llibre titol="El principito"/>
+    <llapis>
+        <numero>2</numero>
+    </llapis>
+</llibreria>

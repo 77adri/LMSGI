@@ -1,0 +1,9 @@
+<!ELEMENT llistafactures (factures+)>
+<!ELEMENT factures (factura+)>
+<!ELEMENT factura (emissor)>
+<!ELEMENT emissor (cif, nom, vendes?, nom_pagador, import)>
+<!ELEMENT cif (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT vendes (#PCDATA)>
+<!ELEMENT nom_pagador (#PCDATA)>
+<!ELEMENT import (#PCDATA)>

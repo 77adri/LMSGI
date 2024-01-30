@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistacursos SYSTEM "act2dtd.dtd">
+<llistacursos>
+    <curs>
+        <alumnes>
+            <alumne>
+                <DNI>41610725E</DNI>
+                <nom>Pepe</nom>
+                <cognom>Carreras</cognom>
+                <assignatures>
+                    <assignatura>
+                        <nom>Catala</nom>
+                        <codi>4758</codi>
+                        <professor>
+                            <num_personal>68776455</num_personal>
+                            <nom>Jose</nom>
+                            <cognom>Garcia</cognom>
+                        </professor>
+                    </assignatura>
+                </assignatures>
+            </alumne>
+        </alumnes>
+    </curs>
+</llistacursos>

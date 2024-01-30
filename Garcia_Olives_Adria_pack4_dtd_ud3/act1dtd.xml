@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE llistafactures SYSTEM "act1dtd.dtd">
+<llistafactures>
+    <factures>
+        <factura>
+            <emissor>
+                <cif>41617826F</cif>
+                <nom>Paco</nom>
+                <nom_pagador>Josep</nom_pagador>
+                <import>4000</import>
+            </emissor>
+            <emissor>
+                <cif>41617826F</cif>
+                <nom>Paco</nom>
+                <nom_pagador>Gerard</nom_pagador>
+                <import>5000</import>
+            </emissor>
+        </factura>
+    </factures>
+</llistafactures>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mercats_accions SYSTEM "act4dtd.dtd">
+
+<mercats_accions>
+    <productes>
+        <futur producte="Producte1" preu="100" origen="Madrid">
+            <element_mercat>Spain</element_mercat>
+        </futur>
+        <divisa nom="Divisa1" preu="1.25" origen="Nova York" estable="true">
+            <tipus_canvi moneda="Euro" valor="0.80" />
+            <tipus_canvi moneda="Yen" valor="105.50" />
+        </divisa>
+        <bo pais_de_procedencia="Espanya" preu="500">
+            <valor_desitjat>550</valor_desitjat>
+            <valor_mínim>450</valor_mínim>
+            <valor_màxim>600</valor_màxim>
+        </bo>
+        <lletra tipus_interes="2.5" pais_emissor="Espanya" preu="1000" origen="Frankfurt" />
+    </productes>
+</mercats_accions>

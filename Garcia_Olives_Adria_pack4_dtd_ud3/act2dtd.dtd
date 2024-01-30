@@ -1,0 +1,13 @@
+<!ELEMENT llistacursos (curs+)>
+<!ELEMENT curs (alumnes+)>
+<!ELEMENT alumnes (alumne+)>
+<!ELEMENT alumne (DNI, nom, cognom, assignatures+)>
+<!ELEMENT DNI (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT cognom (#PCDATA)>
+<!ELEMENT assignatures (#PCDATA)>
+<!ELEMENT assignatures (assignatura+)>
+<!ELEMENT assignatura (nom, codi, professor)>
+<!ELEMENT professor (num_personal, nom, cognom)>
+<!ELEMENT num_personal (#PCDATA)>
+<!ELEMENT codi (#PCDATA)>
