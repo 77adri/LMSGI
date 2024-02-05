@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <!-- Element ciutat amb tipus de dada string -->
+    <xs:element name="ciutat" type="xs:string"/>
+    <!-- Element data-de-naixement amb tipus de dada date -->
+    <xs:element name="data-de-naixement" type="xs:date"/>
+    <!-- Element hora amb tipus de dada time -->
+    <xs:element name="hora" type="xs:time"/>
+    <!-- Element nota amb tipus de dada decimal -->
+    <xs:element name="nota" type="xs:decimal"/>
+    <!-- Element apte (posam "apto") amb tipus de dada boolean -->
+    <xs:element name="apto" type="xs:boolean"/>
+</xs:schema>
