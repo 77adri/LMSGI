@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:simpleType name="gDayPattern">
+    <xs:restriction base="xs:gDay">
+      <xs:pattern value="MM-DD"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="data">
+    <xs:sequence>
+      <xs:element name="dia" type="xs:integer"/>
+      <xs:element name="mes" type="xs:integer"/>
+      <xs:element name="any" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="IDTipus">
+    <xs:restriction base="xs:ID"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="IDREFTipus">
+    <xs:restriction base="xs:IDREF"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="seu">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Madrid"/>
+      <xs:enumeration value="Barcelona"/>
+      <xs:enumeration value="València"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="titols">
+    <xs:sequence>
+      <xs:element name="titol" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="observacions">
+    <xs:sequence>
+      <xs:element name="merits" type="xs:string" minOccurs="0"/>
+      <xs:element name="demerits" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="empleat">
+    <xs:sequence>
+      <xs:element name="nom" type="xs:string"/>
+      <xs:element name="id" type="xs:ID"/>
+      <xs:element name="data_inici" type="data"/>
+      <xs:element name="lloc_actual" type="xs:string"/>
+      <xs:element name="llocs_ocupats" type="xs:string" minOccurs="0"/>
+      <xs:element name="sou" type="xs:decimal"/>
+      <xs:element name="titols_academics" type="titols" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="empresa">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="empleat" maxOccurs="5"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+</xs:schema>
