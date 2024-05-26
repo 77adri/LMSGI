@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/confirmaciocompra.css">
+    <link rel="stylesheet" href="./assets/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <header>
+        <img src="./slogan/rcfondorosadoslogan.png" width="500px">
+        <h2>Confirmació de Compra</h2>
+            <p>
+                <label for="site-search"></label>
+                <input type="search" id="search" name="search"/>
+                <button>Search</button>
+            </p>
+    </header>
+    <main>
+            <div>
+                <h3>Producte</h3>
+                <p>ROLEX Black Limited quantity / Men</p>
+                <p>Precio - 299€</p>
+                <form>
+                    <!-- Nombre del señor/señora -->
+                    <label for="nombre">Nombre del señor/a:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    <div>
+                        <!-- Selección de país -->
+                        <label for="pais">Selecciona tu país:</label>
+                        <select id="pais" name="pais" required>
+                            <option value="espana">España</option>
+                            <option value="francia">Francia</option>
+                            <option value="inglaterra">Inglaterra</option>
+                            <option value="italia">Italia</option>
+                            <option value="usa">USA</option>
+                            <option value="alemania">Alemania</option>
+                            <option value="argentina">Argentina</option>
+                            <option value="brazil">Brazil</option>
+                            <option value="uruguay">Uruguay</option>
+                            <option value="mexico">México</option>
+                            <option value="canada">Canadá</option>
+                        </select>
+                    </div>
+                    <!-- Selección entre llevar a una dirección o llevar a correos -->
+                    <label for="entrega">Selecciona una opción:</label><br>
+                    <input type="radio" id="direccion" name="entrega" value="direccion" required>
+                    <label for="direccion">Llevar a una dirección</label><br>
+                    <input type="radio" id="correos" name="entrega" value="correos" required>
+                    <label for="correos">Llevar a correos</label><br><br>
+            
+                    <!-- Dirección -->
+                    <label for="direccionInput">Dirección:</label>
+                    <input type="text" id="direccionInput" name="direccion"><br><br>
+            
+                    <!-- Número de tarjeta -->
+                    <label for="tarjeta">Número de tarjeta:</label>
+                    <input type="text" id="tarjeta" name="tarjeta" pattern="\d{16}" title="Debe ser un número de tarjeta válido de 16 dígitos" required><br><br>
+            
+                    <!-- Fecha de caducidad -->
+                    <label for="fechaCaducidad">Fecha de caducidad (MMYY):</label>
+                    <input type="text" id="fechaCaducidad" name="fechaCaducidad" pattern="\d{4}" title="Debe ser una fecha válida de 4 dígitos (MMYY)" maxlength="4" required><br><br>
+            
+                    <!-- CVC -->
+                    <label for="cvc">CVC:</label>
+                    <input type="text" id="cvc" name="cvc" pattern="\d{3}" title="Debe ser un CVC válido de 3 dígitos" maxlength="3" required><br><br>
+            
+                    <a href="./comprado.html"><button>Comprar</button></a>
+                </form>
+                
+            </div>
+    </main>
+    <hr>
+    <footer>
+        <p>Numº 684527891</p>
+        <a href="https://www.facebook.com/?locale=ca_ES">Facebook</a>
+        <a href="https://www.instagram.com/">Instagram</a>
+    </footer>
+</body>
+</html>
